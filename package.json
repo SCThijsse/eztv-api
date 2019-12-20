@@ -1,0 +1,48 @@
+{
+  "name": "@scthijsse/eztv-api",
+  "version": "1.0.1",
+  "description": "An EZTV API wrapper to get data from eztv.ag.",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.2",
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "jest": "^24.9.0",
+    "standard": "^14.3.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "babel-node src/index.js",
+    "lint": "standard",
+    "pretest": "yarn lint",
+    "start": "node lib/index.js",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "eztv",
+    "torrent",
+    "api",
+    "popcorn"
+  ],
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scthijsse/eztv-api.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "jest": true
+    }
+  }
+}
